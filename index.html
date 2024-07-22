@@ -2,6 +2,7 @@
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
         <title>Portfolio</title>
     </head>
     <style>
@@ -9,14 +10,15 @@
         
         body { 
           margin: 0;
-          font-family: 'Franklin Gothic Medium', sans-serif;
+          font-family: 'Montserrat', sans-serif;
         }
         
          .header {
           display: flex;
           justify-content: space-between;
-           align-items: center;
-           padding: 20px;
+          align-items: center;
+          padding: 10px;
+          border-bottom: 5px solid #f2f2f2;
         }
         
         .header a {
@@ -31,22 +33,25 @@
         }
         
         .header a.logo {
-          font-size: 25px;
+          font-size: 20px;
           font-weight: bold;
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
         }
         
         .header a:hover {
-          background-color: #999;
-          color: white;
+          background-color: white;
+          color:  #ff3215;
         }
         
         .header a.active {
-          background-color: #ff3215;
-          color: white;
+          color: #ff3215;
         }
         
-        .header-left {
-          float: left;
+        .header-left, .header-right {
+          /* float: left; */
+          display: flex;
         }
         
         @media screen and (max-width: 500px) {
@@ -54,26 +59,25 @@
             float: none;
             display: block;
             text-align: center;
-          } */
-
-        .header-right {
-            float: right;
-          } */
-        .header-center {
-            display: flex;
-            justify-content: center;
-            align-items: center;
+          }
+        }
+        /* .brand,
+        .nav,
+        .button {
+            flex: 1;
         } */
-        .h1 {
+        h1 {
             text-align: center;
             color: #ff3215;
         }
-        .h2 {
+        
+        h2 {
             text-align: center;
             color:#999;
-            font-size: 20px;
+            font-size: 18px;
             font-weight:lighter;
         }
+
         </style>
         </head>
     <body>
@@ -83,19 +87,21 @@
                <a class="active" href="#Projects">Projects</a>
                <a href="#Contact">Contact</a>
             </div>
-            <div class="header-center">
-                <a href="#default" class="logo">Apinaya Ganeshalingam</a>
-            </div>
-            <div class="header-right">
-                <a href= "#Linkedin">Linkedin</a>
-               <a href= "#Instagram">Instagram</a>
+
+            <a href="#default" class="logo">Apinaya Ganeshalingam</a>
+
+            <div class="header-right">   
+                <a href="https://www.linkedin.com/in/apinaya/">
+                   <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+                <a href="https://www.instagram.com/apinayadesigns/">
+                    <i class="fa-brands fa-instagram"></i>
+                 </a>
              </div>
            </div>
-           <div style="padding-left:20px">
+        <div style="padding-left:20px">
         </div>
-        <div>  
-            <h1>Hi, I'm Apinaya!</h1>
-            <h2>I am a strong-willed and detail-orientated third year student with a keen interest in typography and a passion for editorial design. Scroll down to see my work!</h2>
-        </div>
-           </body>
+        <h1>Hi, I'm Apinaya!</h1>
+        <h2>I am a strong-willed and detail orientated third year student with a keen interest in typography and a passion for editorial design. Scroll down to see my work!</h2>
+        </body>
 </html>
