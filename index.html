@@ -1,50 +1,101 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Portfolio</title>
     </head>
     <style>
-        header {
-            background-color: #ffff;
-            padding: 10px;
-            text-align: center;
-            font-size: 23px;
-            color: #ff320b;
-        }
-        h1 {
-            text-align: center;
-            font-size: 60px;
-            color: #ff320b;
-        }
-        h3 {
-            text-align: center;
-            font-size: 20px;
-            color: #999999;
-            padding-top: 0px;
-            padding-right: 160px;
-            padding-bottom: 10px;
-            padding-left: 160px;
-        }
-        .topnav {
-            overflow: hidden;
-            background-color: #ffffff;
-            text-align: left;
-}
-    </style>
-    <header>        
-        <div class="topnav">
-            <div class="links">
-          <a href="#">About me</a>
-          <a href="#">Projects</a>
-          <a href="#">Contact</a>
-        </div class="title">
-          <!-- <h3>Apinaya Ganeshalingam</h3> -->
-          Apinaya Ganeshalingam
-        </div>
+        * {box-sizing: border-box;}
         
-      </header>
+        body { 
+          margin: 0;
+          font-family: 'Franklin Gothic Medium', sans-serif;
+        }
+        
+         .header {
+          display: flex;
+          justify-content: space-between;
+           align-items: center;
+           padding: 20px;
+        }
+        
+        .header a {
+          float: left;
+          color: black;
+          text-align: center;
+          padding: 12px;
+          text-decoration: none;
+          font-size: 18px; 
+          line-height: 25px;
+          border-radius: 4px;
+        }
+        
+        .header a.logo {
+          font-size: 25px;
+          font-weight: bold;
+        }
+        
+        .header a:hover {
+          background-color: #999;
+          color: white;
+        }
+        
+        .header a.active {
+          background-color: #ff3215;
+          color: white;
+        }
+        
+        .header-left {
+          float: left;
+        }
+        
+        @media screen and (max-width: 500px) {
+          .header a {
+            float: none;
+            display: block;
+            text-align: center;
+          } */
+
+        .header-right {
+            float: right;
+          } */
+        .header-center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        } */
+        .h1 {
+            text-align: center;
+            color: #ff3215;
+        }
+        .h2 {
+            text-align: center;
+            color:#999;
+            font-size: 20px;
+            font-weight:lighter;
+        }
+        </style>
+        </head>
     <body>
-        <h1>Hi, I'm Apinaya!</h1>
-        <h3>I am a strong-willed and detail-orientated third year student with a keen interest in typography and a passion for editorial design. Scroll down to see my work!</h3>
-    </body>
+        <div class="header">
+            <div class="header-left">
+               <a href="#home">About me</a>
+               <a class="active" href="#Projects">Projects</a>
+               <a href="#Contact">Contact</a>
+            </div>
+            <div class="header-center">
+                <a href="#default" class="logo">Apinaya Ganeshalingam</a>
+            </div>
+            <div class="header-right">
+                <a href= "#Linkedin">Linkedin</a>
+               <a href= "#Instagram">Instagram</a>
+             </div>
+           </div>
+           <div style="padding-left:20px">
+        </div>
+        <div>  
+            <h1>Hi, I'm Apinaya!</h1>
+            <h2>I am a strong-willed and detail-orientated third year student with a keen interest in typography and a passion for editorial design. Scroll down to see my work!</h2>
+        </div>
+           </body>
 </html>
