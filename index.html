@@ -148,6 +148,8 @@
     width: 100%;
     padding: 5px;
     /* height: 100% !important; */
+    position: relative;
+    overflow: hidden;
   }
 
   .card-item {
@@ -165,6 +167,25 @@
     width: 100%;
     height: 230px;
     object-fit: cover;
+  }
+
+  .card-item .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .card:hover .overlay {
+    opacity: 1;
   }
 
   .w3-container.w3-center {
@@ -207,6 +228,9 @@
         <div class="w3-container">
           <div class="card-item">
             <img src="./pictures/newspaper.jpeg" alt="The Queer Agenda newspaper">
+            <div class="overlay">
+              <div class="text"> The Queer Agenda: 2024</div>
+            </div>
             <div class="w3-container w3-center">
               <h3>The Queer Agenda</h3>
               <h2>2024</h2>
@@ -220,6 +244,9 @@
         <div class="card">
           <div class="card-item">
             <img src="./pictures/insight.png" alt="INSIGHT homepage and search page on a monitor and tablet">
+            <div class="overlay">
+              <div class="text"> INSIGHT: 2024</div>
+            </div>
             <div class="w3-container w3-center">
               <h3>INSIGHT</h3>
               <h2>2024</h2>
@@ -233,6 +260,9 @@
         <div class="card">
           <div class="card-item">
             <img src="./pictures/spoilers.jpeg" alt="Front cover of Spoilers! and inside pages">
+            <div class="overlay">
+              <div class="text">Spoilers! - 2024</div>
+          </div>
             <div class="w3-container w3-center">
               <h3>Spoilers!</h3>
               <h2>2024</h2>
@@ -249,6 +279,9 @@
           <div class="card-item">
             <img src="./pictures/monsters.jpeg"
               alt="Front cover of In the Company of Monsters: New Visions, Ancient Myths and inside pages">
+              <div class="overlay">
+                <div class="text">In the Company of Monsters: New Visions, Ancient Myths - 2024</div>
+            </div>
             <div class="w3-container w3-center">
               <h3>In the Company of Monsters: New Visions, Ancient Myths</h3>
               <h2>2024</h2>
@@ -262,6 +295,9 @@
         <div class="card">
           <div class="card-item">
             <img src="./pictures/OUP book cover.png" alt="Book cover of Moon:Very Short Introduction">
+            <div class="overlay">
+              <div class="text">Book Covers: Very Short Introduction - 2023</div>
+          </div>
             <div class="w3-container w3-center">
               <h3>Book Covers: Very Short Introduction</h3>
               <h2>2023</h2>
@@ -275,6 +311,9 @@
         <div class="card">
           <div class="card-item">
             <img src="./pictures/ouatih.png" alt="Digital mockup of movie poster for Once Upon A Time In Hollywood">
+            <div class="overlay">
+              <div class="text">Once Upon A Time In Hollywood - 2023</div>
+          </div>
             <div class="w3-container w3-center">
               <h3>Once Upon A Time In HollywoodS</h3>
               <h2>2023</h2>
