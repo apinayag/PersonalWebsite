@@ -88,6 +88,7 @@
   h3 {
     text-align: center;
     font-weight: bold;
+    font-size: 18px;
   }
 
   /* .project-cover {
@@ -102,10 +103,39 @@
       flex-direction: column;
     }
   } */
+
+  .column {
+    float: left;
+    width: 33%;
+    padding: 0 10px;
+  }
+
+  .row {
+    margin: 0 -5px;
+  }
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+
+  .card {
+    box-sizing: border-box;
+  }
+
   .footer {
     background-color: #f2f2f2;
     text-align: center;
-    padding: 10px;
+    padding: 30px;
     color: #999;
   }
 </style>
@@ -133,24 +163,58 @@
   <div style="padding-left:20px">
   </div>
   <h1>Hi, I'm Apinaya!</h1>
-  <h2>I am a strong-willed and detail orientated third year student with a keen interest in typography and a passion for editorial design. Scroll down to see my work!</h2>
-  <div class="w3-container">
-    <div class="w3-card-4" style="width:50%">
-      <img src="./pictures/newspaper.jpeg" alt="The Queer Agenda newspaper" style="width:100%">
-      <div class="w3-container w3-center">
-        <h3>The Queer Agenda</h3>
-        <h2>2024</h2>
+  <h2>I am a strong-willed and detail orientated third year student with a keen interest in typography and a passion for
+    editorial design. Scroll down to see my work!</h2>
+  <div class="row">
+    <div class="column">
+      <div class="card">
+        <div class="w3-container">
+          <div class="w3-card-4" style="width:100%">
+            <img src="./pictures/newspaper.jpeg" alt="The Queer Agenda newspaper" style="width: 100%">
+            <div class="w3-container w3-center">
+              <h3>The Queer Agenda</h3>
+              <h2>2024</h2>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-  </div>
-  <!-- <div class="project-cover">
+    <div class="column">
+      <div class="w3-container">
+        <div class="card">
+          <div class="w3-card-4" style="width:100%">
+            <img src="./pictures/insight.png" alt="INSIGHT homepage and search page on a monitor and tablet"
+              style="width:100%">
+            <div class="w3-container w3-center">
+              <h3>INSIGHT</h3>
+              <h2>2024</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="column">
+      <div class="w3-container">
+        <div class="card">
+          <div class="w3-card-4" style="width:100%">
+            <img src="./pictures/monsters.jpeg"
+              alt="Front cover of In the Company of Monsters: New Visions, Ancient Myths and inside pages"
+              style="width:100%">
+            <div class="w3-container w3-center">
+              <h3>In the Company of Monsters: New Visions, Ancient Myths</h3>
+              <h2>2023</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="project-cover">
     <div>The Queer agenda</div>
     <div><img src="./pictures/newspaper.jpeg" style="width: 50%;"/></div>
   </div>  -->
-  <div class="footer">
+    <!-- <div class="footer">
     <p>2024. Apinaya Ganeshalingam</p>
-  </div>
+  </div> -->
 </body>
 
 </html>
