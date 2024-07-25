@@ -106,14 +106,19 @@
   } */
 
   .column {
+    flex: 1;
+    flex-direction: column;
+    margin: 10px;
     float: left;
     width: 33%;
     padding: 0 10px;
   }
 
   .row {
-    margin: 0 -5px;
-    
+    display: flex;
+    flex-wrap: wrap;
+    /* margin: 0 -5px; */
+
   }
 
   .row:after {
@@ -132,7 +137,38 @@
 
   .card {
     box-sizing: border-box;
-    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* flex-flow: row wrap; */
+    /* align-items: stretch; */
+    /* padding-top: 10px; */
+    /* max-height: 300px; */
+    margin-bottom: 90px;
+    width: 100%;
+    padding: 9px 20px;
+    /* height: 100% !important; */
+  }
+
+  .card-item {
+    flex: 1;
+    /* padding: 10px;
+    margin: 10px;
+    border: 1px solid #999;
+    border-radius: 4px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .card-item img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+  }
+
+  .w3-container.w3-center {
+    padding: 10px 0;
   }
 
   .footer {
@@ -142,12 +178,11 @@
   }
 </style>
 
-
 <body>
   <div class="header">
     <div class="header-left">
       <a href="./about-me.html">About me</a>
-      <a class="active" href="#Projects">Projects</a>
+      <a class="active" href="#Projects"> <b>Projects</b></a>
       <a href="#Contact">Contact</a>
     </div>
 
@@ -162,8 +197,7 @@
       </a>
     </div>
   </div>
-  <div style="padding-left:20px">
-  </div>
+  <div style="padding-left:20px"></div>
   <h1>Hi, I'm Apinaya!</h1>
   <h2>I am a strong-willed and detail orientated third year student with a keen interest in typography and a passion for
     editorial design. Scroll down to see my work!</h2>
@@ -171,8 +205,8 @@
     <div class="column">
       <div class="card">
         <div class="w3-container">
-          <div class="w3-card-4" style="width:100%">
-            <img src="./pictures/newspaper.jpeg" alt="The Queer Agenda newspaper" style="width: 100%">
+          <div class="card-item">
+            <img src="./pictures/newspaper.jpeg" alt="The Queer Agenda newspaper">
             <div class="w3-container w3-center">
               <h3>The Queer Agenda</h3>
               <h2>2024</h2>
@@ -184,9 +218,8 @@
     <div class="column">
       <div class="w3-container">
         <div class="card">
-          <div class="w3-card-4" style="width:100%">
-            <img src="./pictures/insight.png" alt="INSIGHT homepage and search page on a monitor and tablet"
-              style="width:100%">
+          <div class="card-item">
+            <img src="./pictures/insight.png" alt="INSIGHT homepage and search page on a monitor and tablet">
             <div class="w3-container w3-center">
               <h3>INSIGHT</h3>
               <h2>2024</h2>
@@ -198,10 +231,8 @@
     <div class="column">
       <div class="w3-container">
         <div class="card">
-          <div class="w3-card-4" style="width:100%">
-            <img src="./pictures/spoilers.jpeg"
-              alt="Front cover of Spoilers! and inside pages"
-              style="width:100%">
+          <div class="card-item">
+            <img src="./pictures/spoilers.jpeg" alt="Front cover of Spoilers! and inside pages">
             <div class="w3-container w3-center">
               <h3>Spoilers!</h3>
               <h2>2024</h2>
@@ -215,8 +246,9 @@
     <div class="column">
       <div class="card">
         <div class="w3-container">
-          <div class="w3-card-4" style="width:100%">
-            <img src="./pictures/monsters.jpeg" alt="Front cover of In the Company of Monsters: New Visions, Ancient Myths and inside pages" style="width: 100%">
+          <div class="card-item">
+            <img src="./pictures/monsters.jpeg"
+              alt="Front cover of In the Company of Monsters: New Visions, Ancient Myths and inside pages">
             <div class="w3-container w3-center">
               <h3>In the Company of Monsters: New Visions, Ancient Myths</h3>
               <h2>2024</h2>
@@ -228,9 +260,8 @@
     <div class="column">
       <div class="w3-container">
         <div class="card">
-          <div class="w3-card-4" style="width:100%">
-            <img src="./pictures/OUP book cover.png" alt="Book cover of Moon:Very Short Introduction"
-              style="width:100%">
+          <div class="card-item">
+            <img src="./pictures/OUP book cover.png" alt="Book cover of Moon:Very Short Introduction">
             <div class="w3-container w3-center">
               <h3>Book Covers: Very Short Introduction</h3>
               <h2>2023</h2>
@@ -242,10 +273,8 @@
     <div class="column">
       <div class="w3-container">
         <div class="card">
-          <div class="w3-card-4" style="width:100%">
-            <img src="./pictures/ouatih.png"
-              alt="Digital mockup of movie poster for Once Upon A Time In Hollywood"
-              style="width:100%">
+          <div class="card-item">
+            <img src="./pictures/ouatih.png" alt="Digital mockup of movie poster for Once Upon A Time In Hollywood">
             <div class="w3-container w3-center">
               <h3>Once Upon A Time In HollywoodS</h3>
               <h2>2023</h2>
@@ -255,13 +284,13 @@
       </div>
     </div>
   </div>
-    <!-- <div class="project-cover">
+  <!-- <div class="project-cover">
     <div>The Queer agenda</div>
     <div><img src="./pictures/newspaper.jpeg" style="width: 50%;"/></div>
   </div>  -->
-    <div class="footer">
-      <p>2024. Apinaya Ganeshalingam</p>
-    </div>
+  <div class="footer">
+    <p>2024. Apinaya Ganeshalingam</p>
+  </div>
 </body>
 
 </html>
