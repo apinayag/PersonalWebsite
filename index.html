@@ -39,9 +39,10 @@
   .header a.logo {
     font-size: 20px;
     font-weight: bold;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    align: right;
+    /* position: absolute; */
+    /* left: 50%; */
+    /* transform: translateX(-50%); */
   }
 
   .header a:hover {
@@ -177,11 +178,12 @@
     bottom: 0;
     background: rgba(0, 0, 0, 0.7);
     color: white;
+    font-weight: bold;
     display: flex;
     justify-content: center;
     align-items: center;
     opacity: 0;
-    transition: opacity 0.3s ease;
+    transition: opacity 0.5s ease;
   }
 
   .card:hover .overlay {
@@ -202,14 +204,15 @@
 <body>
   <div class="header">
     <div class="header-left">
-      <a href="./about-me.html">About me</a>
+      <a href="#default" class="logo">Apinaya Ganeshalingam</a>
+      <!-- <a href="./about-me.html">About me</a>
       <a class="active" href="#Projects"> <b>Projects</b></a>
-      <a href="#Contact">Contact</a>
+      <a href="#Contact">Contact</a> -->
     </div>
 
-    <a href="#default" class="logo">Apinaya Ganeshalingam</a>
-
     <div class="header-right">
+      <a href="./about-me.html">About me</a>
+      <a href="#Contact">Contact</a>
       <a href="https://www.linkedin.com/in/apinaya/">
         <i class="fa-brands fa-linkedin-in"></i>
       </a>
@@ -280,7 +283,7 @@
             <img src="./pictures/monsters.jpeg"
               alt="Front cover of In the Company of Monsters: New Visions, Ancient Myths and inside pages">
               <div class="overlay">
-                <div class="text">In the Company of Monsters: New Visions, Ancient Myths - 2024</div>
+                <div class="text">In the Company of Monsters - 2024</div>
             </div>
             <div class="w3-container w3-center">
               <h3>In the Company of Monsters: New Visions, Ancient Myths</h3>
@@ -296,7 +299,7 @@
           <div class="card-item">
             <img src="./pictures/OUP book cover.png" alt="Book cover of Moon:Very Short Introduction">
             <div class="overlay">
-              <div class="text">Book Covers: Very Short Introduction - 2023</div>
+              <div class="text">Very Short Introduction - 2023</div>
           </div>
             <div class="w3-container w3-center">
               <h3>Book Covers: Very Short Introduction</h3>
