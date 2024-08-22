@@ -70,11 +70,6 @@
     }
   }
 
-  /* .brand,
-        .nav,
-        .button {
-            flex: 1;
-        } */
   h1 {
     text-align: center;
     color: #ab1500;
@@ -110,78 +105,31 @@
     /* margin: 0 -5px; */
 
   }
+  .flex-container-column {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+}
+.flex-container {
+  display: flex;
+}
 
-  .row:after {
-    content: "";
-    display: flex;
-    clear: both;
-  }
-
-  @media screen and (max-width: 600px) {
-    .column {
-      width: 100%;
-      display: flex;
-      margin-bottom: 20px;
-    }
-  }
-
-  .card {
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    /* flex-flow: row wrap; */
-    /* align-items: stretch; */
-    /* padding-top: 10px; */
-    /* max-height: 300px; */
-    margin-bottom: 10px;
-    width: 100%;
-    padding: 5px;
-    /* height: 100% !important; */
-    position: relative;
-    overflow: hidden;
-  }
-
-  .card-item {
-    flex: 1;
-    /* padding: 10px;
-    margin: 10px;
-    border: 1px solid #999;
-    border-radius: 4px; */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-
-  .card-item img {
-    width: 100%;
-    height: 230px;
-    object-fit: cover;
-  }
-
-  .card-item .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.7);
-    color: white;
-    font-weight: bold;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-    transition: opacity 0.5s ease;
-  }
-
-  .card:hover .overlay {
-    opacity: 1;
-  }
-
-  .w3-container.w3-center {
-    padding: 10px 0;
-  }
+.flex-container-column > div {
+  background-color: black;
+  width: across;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+.flex-container > div {
+  background-color: black;
+  width: 400px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
 
   .footer {
     text-align: center;
@@ -207,10 +155,27 @@
       </a>
     </div>
   </div>
-  <div style="padding-left:20px"></div>
-  <h1>Hi, I'm Apinaya!</h1>
-  <h2>I am a strong-willed and detail orientated third year student with a keen interest in typography and a passion for
-    editorial design. Scroll down to see my work!</h2>
+  <div>
+
+  </div>
+  <div class="flex-container-column">
+    <div>image with name
+      <h1>Hi, I'm Apinaya!</h1>
+      <h2>I am a strong-willed and detail orientated third year student with a keen interest in typography and a passion for
+        editorial design. Scroll down to see my work!</h2>
+    </div>
+    <div>Animation infographic</div>
+    <div>
+      <div class="flex-container">
+        <div>image 1</div>
+        <div>image 2</div>
+        <div>image 3</div>
+        <div>image 4</div>
+        <div>image 5</div>
+        <div>image 6</div>
+      </div>
+    </div>  
+  </div>
   <!-- <div class="row">
     <div class="column">
       <div class="card">
@@ -315,6 +280,7 @@
   <div class="footer">
     <p>2024. Apinaya Ganeshalingam</p>
   </div> -->
+ 
 </body>
 
 </html>
